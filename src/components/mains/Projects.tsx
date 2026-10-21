@@ -53,16 +53,7 @@ const StyledMain = styled.main`
 `;
 
 export default function Projects() {
-    const {
-        first,
-        setFirst,
-        second,
-        setSecond,
-        calculate,
-        clearCalculator,
-        result
-    } = useCalculator();
-
+    const {first, setFirst, second, setSecond, calculate, clearCalculator, result} = useCalculator();
     return (
         <StyledMain>
             <StyledCalc>
@@ -83,12 +74,7 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <h2
-                    id="output"
-                    style={{
-                        color: result !== null && result < 0 ? "red" : "black"
-                    }}
-                >
+                <h2 id="output" style={{color: result !== null && result < 0 ? "red" : "black"}}>
                     {result !== null ? String(result) : ""}
                 </h2>
             </StyledCalc>

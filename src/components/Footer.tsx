@@ -1,5 +1,3 @@
-import {Link} from "react-router";
-
 import styled from "styled-components";
 const StyledFooter=styled.main`
     box-sizing: border-box;
